@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="centered">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="upload-form">
+                <h2 class="text-white mb-3">Upload another image</h2>
+                <form action="/uploader" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="imageInput" class="text-white">Choose an image</label>
+                        <input type="file" class="form-control-file" id="imageInput" name="file">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="image-container">
+                <figure>
+                    <img src="/static/uploads/{{display_image}}" style="width:100%;height:auto;">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 offset-md-1">
+        <p class="text-white font-weight-bold">{{predictions}}</p>
+    </div>
+
+    </br>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <span class="text-muted">Created by Muhammad Ahsan</span>
+    </div>
+</footer>
+{% endblock %}
