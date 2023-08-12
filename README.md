@@ -8,13 +8,15 @@ This is a simple Flask application that allows users to upload an image and obta
 Here's how to use it: 
   
   1. Download or clone this github repo to your IDE.
-  2. 
-  3. Upgrade pip <br>
+    
+  2. Upgrade pip <br>
   
   ```python -m pip install --upgrade pip``` <br>
+  
   3. Install requirements.txt <br>
   
   ```pip install -r requirements.txt``` <br>
+  
   4. Run app <br>
   
   ```python app.py``` <br>
